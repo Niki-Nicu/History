@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NCERT Class 6 History – Our Pasts I | UPSC Revision Poster</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:       #f0f4ff;
+    --white:    #ffffff;
+    --text:     #1e293b;
+    --text-mid: #475569;
+    --text-lt:  #64748b;
+    --border:   #e2e8f0;
+
+    /* Chapter colours — vivid but not neon */
+    --c1: #e8590c;  /* burnt orange */
+    --c2: #2f9e44;  /* forest green */
+    --c3: #0c8599;  /* teal */
+    --c4: #c92a2a;  /* red */
+    --c5: #1971c2;  /* blue */
+    --c6: #7048e8;  /* violet */
+    --c7: #e67700;  /* amber */
+    --c8: #5c940d;  /* lime */
+    --c9: #d9480f;  /* deep orange */
+    --c10:#a61e4d;  /* rose */
+
+    /* Pastel card backgrounds */
+    --c1b: #fff4ec; --c2b: #ebfbee; --c3b: #e3fafc;
+    --c4b: #fff5f5; --c5b: #e7f5ff; --c6b: #f3f0ff;
+    --c7b: #fff9db; --c8b: #f4fce3; --c9b: #fff3e3;
+    --c10b:#fff0f6;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 16px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* ── OUTER FRAME ── */
+  .outer-frame {
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.04), 0 20px 60px rgba(0,0,0,0.08);
+    overflow: hidden;
+    border: 1.5px solid var(--border);
+  }
+
+  /* ── HEADER ── */
+  .poster-header {
+    background: linear-gradient(135deg, #1971c2 0%, #1098ad 40%, #0ca678 100%);
+    padding: 28px 30px 22px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .poster-header::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='30' cy='30' r='1.5' fill='rgba(255,255,255,0.08)'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+  .header-title-main {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.15);
+    position: relative;
+  }
+  .header-title-sub {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    position: relative;
+  }
+  .header-tagline {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.9);
+    margin-top: 8px;
+    font-style: italic;
+    position: relative;
+  }
+  .header-meta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+    position: relative;
+  }
+  .header-badge {
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.35);
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.67rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 999px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    backdrop-filter: blur(4px);
+  }
+
+  /* ── LAYOUT ── */
+  .poster-body {
+    display: grid;
+    grid-template-columns: 1fr 308px;
+    gap: 0;
+    background: var(--bg);
+  }
+
+  /* ── TIMELINE COL ── */
+  .timeline-col {
+    padding: 20px 18px 20px 20px;
+    background: var(--bg);
+    position: relative;
+  }
+  .timeline-section-label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-lt);
+    text-align: center;
+    padding: 6px 0 14px;
+  }
+
+  /* ── CHAPTER CARD ── */
+  .chapter-card {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 0 12px;
+    margin-bottom: 0;
+    position: relative;
+  }
+  .chapter-num-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .chapter-dot {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #fff;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+  }
+  .chapter-line {
+    width: 3px;
+    flex: 1;
+    min-height: 16px;
+    margin: 3px 0;
+    border-radius: 2px;
+  }
+
+  /* ── CHAPTER CONTENT ── */
+  .chapter-content {
+    border-radius: 14px;
+    border-left: 5px solid;
+    padding: 14px 16px;
+    margin-bottom: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    position: relative;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+    cursor: default;
+  }
+  .chapter-content:hover {
+    transform: translateY(-3px) scale(1.012);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.13);
+    filter: brightness(1.03);
+    z-index: 10;
+  }
+  .ch-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+  .ch-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.25;
+    flex: 1;
+  }
+  .ch-period {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.64rem;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 999px;
+    border: 1.5px solid;
+    white-space: nowrap;
+    flex-shrink: 0;
+    background: rgba(255,255,255,0.7);
+    letter-spacing: 0.3px;
+  }
+  .ch-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 14px;
+    margin-bottom: 8px;
+  }
+  .ch-section-label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    opacity: 0.75;
+  }
+  .ch-facts {
+    font-size: 0.76rem;
+    line-height: 1.55;
+    color: var(--text-mid);
+  }
+  .ch-facts li {
+    list-style: none;
+    padding-left: 12px;
+    position: relative;
+    margin-bottom: 2px;
+  }
+  .ch-facts li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    font-size: 0.5rem;
+    top: 4px;
+    opacity: 0.6;
+  }
+  .ch-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 6px;
+  }
+  .tag {
+    font-size: 0.63rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1.5px solid;
+    background: rgba(255,255,255,0.7);
+    font-family: 'Outfit', sans-serif;
+  }
+  .ch-significance {
+    font-size: 0.74rem;
+    padding: 7px 11px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.55);
+    margin-top: 6px;
+    line-height: 1.45;
+    color: var(--text-mid);
+    border-left: 3px solid;
+  }
+  .ch-significance strong {
+    font-style: normal;
+    font-size: 0.63rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .ch-memory {
+    font-size: 0.72rem;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.7);
+    line-height: 1.45;
+    color: var(--text-mid);
+    font-style: italic;
+  }
+  .ch-memory strong {
+    font-style: normal;
+    font-size: 0.63rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  /* ── TRANSITION BRIDGE ── */
+  .transition-bridge {
+    border-radius: 10px;
+    padding: 9px 13px;
+    margin-bottom: 6px;
+    background: linear-gradient(135deg, #f8faff, #eef2ff);
+    border: 1.5px solid #c7d2fe;
+    border-left: 4px solid #818cf8;
+  }
+  .bridge-arrow {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.58rem;
+    font-weight: 700;
+    color: #6366f1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .bridge-text {
+    color: var(--text-mid);
+    font-size: 0.76rem;
+    line-height: 1.5;
+  }
+  .bridge-text strong { color: #4338ca; font-style: normal; }
+  .bridge-connector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+  }
+  .bridge-from {
+    background: #eef2ff;
+    color: #4f46e5;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.61rem;
+    font-weight: 600;
+    padding: 2px 9px;
+    border-radius: 999px;
+    border: 1px solid #c7d2fe;
+  }
+  .bridge-to {
+    background: #e0e7ff;
+    color: #3730a3;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.61rem;
+    font-weight: 700;
+    padding: 2px 9px;
+    border-radius: 999px;
+    border: 1px solid #a5b4fc;
+  }
+  .bridge-arrow-mid { color: #6366f1; font-size: 1rem; }
+
+  .bridge-dot {
+    width: 24px; height: 24px;
+    background: #eef2ff;
+    border: 2px solid #818cf8;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; z-index: 2;
+    font-size: 0.8rem; color: #6366f1;
+  }
+
+  /* ── CHAPTER COLOURS ── */
+  .ch1  { border-left-color: var(--c1);  background: var(--c1b); }
+  .ch1 .ch-title { color: var(--c1); }
+  .ch1 .ch-period { border-color: var(--c1); color: var(--c1); }
+  .ch1 .ch-significance { border-left-color: var(--c1); }
+  .dot1 { background: linear-gradient(135deg, var(--c1), #f08c3a); }
+  .line1 { background: linear-gradient(180deg, var(--c1), #f08c3a); }
+
+  .ch2  { border-left-color: var(--c2);  background: var(--c2b); }
+  .ch2 .ch-title { color: var(--c2); }
+  .ch2 .ch-period { border-color: var(--c2); color: var(--c2); }
+  .ch2 .ch-significance { border-left-color: var(--c2); }
+  .dot2 { background: linear-gradient(135deg, var(--c2), #51cf66); }
+  .line2 { background: linear-gradient(180deg, var(--c2), #51cf66); }
+
+  .ch3  { border-left-color: var(--c3);  background: var(--c3b); }
+  .ch3 .ch-title { color: var(--c3); }
+  .ch3 .ch-period { border-color: var(--c3); color: var(--c3); }
+  .ch3 .ch-significance { border-left-color: var(--c3); }
+  .dot3 { background: linear-gradient(135deg, var(--c3), #22b8cf); }
+  .line3 { background: linear-gradient(180deg, var(--c3), #22b8cf); }
+
+  .ch4  { border-left-color: var(--c4);  background: var(--c4b); }
+  .ch4 .ch-title { color: var(--c4); }
+  .ch4 .ch-period { border-color: var(--c4); color: var(--c4); }
+  .ch4 .ch-significance { border-left-color: var(--c4); }
+  .dot4 { background: linear-gradient(135deg, var(--c4), #f03e3e); }
+  .line4 { background: linear-gradient(180deg, var(--c4), #f03e3e); }
+
+  .ch5  { border-left-color: var(--c5);  background: var(--c5b); }
+  .ch5 .ch-title { color: var(--c5); }
+  .ch5 .ch-period { border-color: var(--c5); color: var(--c5); }
+  .ch5 .ch-significance { border-left-color: var(--c5); }
+  .dot5 { background: linear-gradient(135deg, var(--c5), #339af0); }
+  .line5 { background: linear-gradient(180deg, var(--c5), #339af0); }
+
+  .ch6  { border-left-color: var(--c6);  background: var(--c6b); }
+  .ch6 .ch-title { color: var(--c6); }
+  .ch6 .ch-period { border-color: var(--c6); color: var(--c6); }
+  .ch6 .ch-significance { border-left-color: var(--c6); }
+  .dot6 { background: linear-gradient(135deg, var(--c6), #9775fa); }
+  .line6 { background: linear-gradient(180deg, var(--c6), #9775fa); }
+
+  .ch7  { border-left-color: var(--c7);  background: var(--c7b); }
+  .ch7 .ch-title { color: var(--c7); }
+  .ch7 .ch-period { border-color: var(--c7); color: var(--c7); }
+  .ch7 .ch-significance { border-left-color: var(--c7); }
+  .dot7 { background: linear-gradient(135deg, var(--c7), #fcc419); }
+  .line7 { background: linear-gradient(180deg, var(--c7), #fcc419); }
+
+  .ch8  { border-left-color: var(--c8);  background: var(--c8b); }
+  .ch8 .ch-title { color: var(--c8); }
+  .ch8 .ch-period { border-color: var(--c8); color: var(--c8); }
+  .ch8 .ch-significance { border-left-color: var(--c8); }
+  .dot8 { background: linear-gradient(135deg, var(--c8), #94d82d); }
+  .line8 { background: linear-gradient(180deg, var(--c8), #94d82d); }
+
+  .ch9  { border-left-color: var(--c9);  background: var(--c9b); }
+  .ch9 .ch-title { color: var(--c9); }
+  .ch9 .ch-period { border-color: var(--c9); color: var(--c9); }
+  .ch9 .ch-significance { border-left-color: var(--c9); }
+  .dot9 { background: linear-gradient(135deg, var(--c9), #f76707); }
+  .line9 { background: linear-gradient(180deg, var(--c9), #f76707); }
+
+  .ch10 { border-left-color: var(--c10); background: var(--c10b); }
+  .ch10 .ch-title { color: var(--c10); }
+  .ch10 .ch-period { border-color: var(--c10); color: var(--c10); }
+  .ch10 .ch-significance { border-left-color: var(--c10); }
+  .dot10 { background: linear-gradient(135deg, var(--c10), #f06595); }
+  .line10 { background: linear-gradient(180deg, var(--c10), #f06595); }
+
+  /* ── RIGHT COLUMN ── */
+  .right-col {
+    padding: 16px 14px 16px 12px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-left: 1.5px solid var(--border);
+  }
+  .panel-section {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border: 1px solid var(--border);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    cursor: default;
+  }
+  .panel-section:hover {
+    transform: translateY(-2px) scale(1.008);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.11);
+  }
+  .panel-header {
+    padding: 8px 14px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.67rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+  .panel-body {
+    padding: 10px 12px;
+    background: var(--white);
+  }
+
+  /* Sites */
+  .sites-header { background: linear-gradient(135deg, #0c8599, #0ca678); }
+  .site-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    margin-bottom: 6px;
+    font-size: 0.73rem;
+    line-height: 1.4;
+    color: var(--text-mid);
+  }
+  .site-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--c3);
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+  .site-name { font-weight: 700; color: var(--c3); font-family: 'Outfit', sans-serif; }
+
+  /* Sources */
+  .sources-header { background: linear-gradient(135deg, #7048e8, #4263eb); }
+  .source-tag {
+    display: inline-block;
+    background: #f3f0ff;
+    border: 1.5px solid #b197fc;
+    color: var(--c6);
+    font-size: 0.64rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin: 2px 2px 2px 0;
+    font-family: 'Outfit', sans-serif;
+  }
+  .source-desc {
+    font-size: 0.7rem;
+    line-height: 1.5;
+    margin-top: 7px;
+    color: var(--text-mid);
+  }
+
+  /* Personalities */
+  .persons-header { background: linear-gradient(135deg, #c92a2a, #a61e4d); }
+  .person-item {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 6px;
+    font-size: 0.71rem;
+    line-height: 1.4;
+    color: var(--text-mid);
+  }
+  .person-icon {
+    width: 26px; height: 26px;
+    background: linear-gradient(135deg, var(--c4), var(--c10));
+    color: #fff;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+  .person-name { font-family: 'Outfit', sans-serif; font-weight: 700; color: var(--c4); }
+  .person-desc { color: var(--text-mid); }
+
+  /* Traps */
+  .traps-header { background: linear-gradient(135deg, #d9480f, #e67700); }
+  .trap-row {
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr;
+    gap: 4px;
+    align-items: center;
+    margin-bottom: 4px;
+    font-size: 0.67rem;
+  }
+  .trap-a {
+    background: #fff4ec;
+    border: 1.5px solid #ffa94d;
+    padding: 4px 6px;
+    border-radius: 7px;
+    color: var(--c9);
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    font-size: 0.64rem;
+  }
+  .trap-b {
+    background: #e3fafc;
+    border: 1.5px solid #66d9e8;
+    padding: 4px 6px;
+    border-radius: 7px;
+    color: var(--c3);
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    font-size: 0.64rem;
+  }
+  .trap-vs {
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.52rem;
+    font-weight: 700;
+    color: var(--c7);
+  }
+  .trap-detail {
+    grid-column: 1 / -1;
+    font-size: 0.64rem;
+    color: var(--text-lt);
+    padding: 2px 6px;
+    border-left: 2.5px solid #ffe8cc;
+    margin-top: -1px;
+    margin-bottom: 4px;
+    line-height: 1.45;
+  }
+
+  /* Flow */
+  .flow-header { background: linear-gradient(135deg, #1971c2, #0ca678); }
+  .flow-chain {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .flow-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.68rem;
+    color: var(--text-mid);
+  }
+  .flow-num {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.58rem;
+    font-weight: 800;
+    color: #fff;
+    flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+  }
+  .flow-label {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.68rem;
+  }
+  .flow-arrow {
+    font-size: 0.6rem;
+    color: var(--text-lt);
+    padding-left: 2px;
+  }
+
+  /* ── FOOTER ── */
+  .poster-footer {
+    background: linear-gradient(135deg, #1971c2, #1098ad, #0ca678);
+    padding: 18px 24px 14px;
+    position: relative;
+  }
+  .footer-chain-label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.9);
+    text-align: center;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+  .footer-chain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+    row-gap: 8px;
+  }
+  .fc-node {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(4px);
+    border: 1.5px solid rgba(255,255,255,0.35);
+    color: #fff;
+    padding: 6px 11px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.64rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.35;
+    min-width: 78px;
+    border-radius: 10px;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    cursor: default;
+  }
+  .fc-node:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  }
+  .fc-node .fc-num {
+    display: block;
+    font-size: 0.5rem;
+    opacity: 0.75;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+  .fc-arrow {
+    color: rgba(255,255,255,0.7);
+    font-size: 1rem;
+    padding: 0 4px;
+    flex-shrink: 0;
+  }
+  .footer-copy {
+    text-align: center;
+    margin-top: 12px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.56rem;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  @media print {
+    body { background: white; padding: 0; font-size: 11px; }
+    .outer-frame { box-shadow: none; border-radius: 0; }
+    .poster-body { grid-template-columns: 1fr 290px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="outer-frame">
+
+  <!-- HEADER -->
+  <div class="poster-header">
+    <div class="header-title-main">OUR PASTS — I</div>
+    <div class="header-title-sub">NCERT CLASS VI HISTORY · NEW EDITION · COMPLETE REVISION POSTER</div>
+    <div class="header-tagline">A Civilizational Story in Ten Chapters — From Early Humans to Classical India</div>
+    <div class="header-meta">
+      <span class="header-badge">UPSC PRELIMS · MAINS GS-I</span>
+      <span class="header-badge">10 CHAPTERS · LATEST EDITION</span>
+      <span class="header-badge">CONNECTED STORY FORMAT</span>
+      <span class="header-badge">TRANSITION BRIDGES · KEY TERMS</span>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="poster-body">
+
+    <!-- LEFT TIMELINE -->
+    <div class="timeline-col">
+      <div class="timeline-section-label">Chapter Timeline — Ten-Chapter Flow with Civilisational Transitions</div>
+
+      <!-- CHAPTER 1 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="chapter-dot dot1">1</div>
+          <div class="chapter-line line1"></div>
+        </div>
+        <div class="chapter-content ch1">
+          <div class="ch-header">
+            <div class="ch-title">What, Where, How and When?</div>
+            <div class="ch-period" style="border-color:var(--c1);color:var(--c1);">2 MYA – 600 BCE</div>
+          </div>
+          <div class="ch-grid">
+            <div>
+              <div class="ch-section-label" style="color:var(--c1);">▸ UPSC Prelims Facts</div>
+              <ul class="ch-facts">
+                <li>History = past of ALL living beings; dates from written records (inscriptions, manuscripts)</li>
+                <li>Historians use BC/AD or BCE/CE; BCE = Before Common Era</li>
+                <li>Sources: archaeological (material), literary, oral</li>
+                <li>Narmada Valley — earliest human habitation in India (~2 MYA)</li>
+                <li>River valleys (Indus, Ganga) = centres of early civilisations</li>
+                <li>Deccan Plateau — black soil (Regur); tribal habitations</li>
+              </ul>
+            </div>
+            <div>
+              <div class="ch-section-label" style="color:var(--c1);">▸ Key Concepts</div>
+              <div class="ch-tags">
+                <span class="tag" style="border-color:var(--c1);color:var(--c1);">BCE/CE</span>
+                <span class="tag" style="border-color:var(--c1);color:var(--c1);">Archaeology</span>
+                <span class="tag" style="border-color:var(--c1);color:var(--c1);">Manuscripts</span>
+                <span class="tag" style="border-color:var(--c1);color:var(--c1);">Inscriptions</span>
+                <span class="tag" style="border-color:var(--c1);color:var(--c1);">Coins</span>
+                <span class="tag" style="border-color:var(--c1);color:var(--c1);">Oral tradition</span>
+              </div>
+              <div class="ch-section-label" style="color:var(--c1);margin-top:6px;">▸ Sites / Sources</div>
+              <ul class="ch-facts">
+                <li>Narmada Valley (earliest habitation)</li>
+                <li>ASI — Archaeological Survey of India</li>
+                <li>Subtraction method: 2000 BCE = 2000+2024 = ~4000 years ago</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ch-significance">
+            <strong>UPSC Sig · </strong>Foundation chapter — defines the tools historians use. Prelims often asks BCE vs BC; sources classification (material vs literary vs oral); and river valley significance.
+          </div>
+          <div class="ch-memory">
+            <strong>Memory · </strong>"What WHERE how WHEN" = 4Ws of History. Narmada = oldest; Inscriptions = most reliable primary source.
+          </div>
+        </div>
+      </div>
+
+      <!-- BRIDGE 1→2 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="bridge-dot">→</div>
+          <div class="chapter-line line1" style="min-height:10px;"></div>
+        </div>
+        <div class="transition-bridge">
+          <span class="bridge-arrow">⟶ Civilisational Transition · Ch 1 → Ch 2</span>
+          <div class="bridge-text">Once we know <strong>how to read the past</strong>, we turn to the earliest chapter of human life: <strong>hunter-gatherers</strong> slowly learning to domesticate plants and animals. The shift from foraging to farming — the <strong>Neolithic Revolution</strong> — is the single greatest change in human prehistory, creating the conditions for permanent settlement, surplus, and ultimately civilisation.</div>
+          <div class="bridge-connector">
+            <span class="bridge-from">Tools of History</span>
+            <span class="bridge-arrow-mid">→</span>
+            <span class="bridge-to">Earliest Human Lives</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 2 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="chapter-dot dot2">2</div>
+          <div class="chapter-line line2"></div>
+        </div>
+        <div class="chapter-content ch2">
+          <div class="ch-header">
+            <div class="ch-title">From Hunting-Gathering to Growing Food</div>
+            <div class="ch-period" style="border-color:var(--c2);color:var(--c2);">2 MYA – 3000 BCE</div>
+          </div>
+          <div class="ch-grid">
+            <div>
+              <div class="ch-section-label" style="color:var(--c2);">▸ UPSC Prelims Facts</div>
+              <ul class="ch-facts">
+                <li>Palaeolithic (Old Stone Age): nomadic, microlithic tools, cave paintings (Bhimbetka)</li>
+                <li>Mesolithic (Middle Stone Age): transitional, smaller tools, semi-nomadic</li>
+                <li>Neolithic (New Stone Age): agriculture, domestication, polished stone tools</li>
+                <li>Mehrgarh (Balochistan): earliest farming site in subcontinent (~7000 BCE); barley, wheat; cattle</li>
+                <li>Inamgaon (Maharashtra): Chalcolithic village; burial under house floor</li>
+                <li>Chirand (Bihar), Burzahom (Kashmir): other Neolithic sites</li>
+              </ul>
+            </div>
+            <div>
+              <div class="ch-section-label" style="color:var(--c2);">▸ Key Concepts</div>
+              <div class="ch-tags">
+                <span class="tag" style="border-color:var(--c2);color:var(--c2);">Palaeolithic</span>
+                <span class="tag" style="border-color:var(--c2);color:var(--c2);">Neolithic</span>
+                <span class="tag" style="border-color:var(--c2);color:var(--c2);">Domestication</span>
+                <span class="tag" style="border-color:var(--c2);color:var(--c2);">Mehrgarh</span>
+                <span class="tag" style="border-color:var(--c2);color:var(--c2);">Bhimbetka</span>
+                <span class="tag" style="border-color:var(--c2);color:var(--c2);">Microlithic</span>
+              </div>
+              <div class="ch-section-label" style="color:var(--c2);margin-top:6px;">▸ Important Sites</div>
+              <ul class="ch-facts">
+                <li><strong>Bhimbetka</strong>: Madhya Pradesh; rock paintings; Palaeolithic–Mesolithic</li>
+                <li><strong>Mehrgarh</strong>: earliest agri; wheat/barley; c.7000 BCE</li>
+                <li><strong>Inamgaon</strong>: Chalcolithic; Maharashtra; burials</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ch-significance">
+            <strong>UPSC Sig · </strong>Prelims: Mehrgarh dates, Bhimbetka (UNESCO WHS 2003), difference between Palaeolithic and Neolithic, Chalcolithic = Copper-Stone Age. New NCERT merges old Ch2+Ch3 here.
+          </div>
+          <div class="ch-memory">
+            <strong>Memory · </strong>OLD-STONE = Bhimbetka caves. NEW-STONE = Mehrgarh farms. Chalco = copper knife + stone sickle. Inamgaon = buried at home.
+          </div>
+        </div>
+      </div>
+
+      <!-- BRIDGE 2→3 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="bridge-dot">→</div>
+          <div class="chapter-line line2" style="min-height:10px;"></div>
+        </div>
+        <div class="transition-bridge">
+          <span class="bridge-arrow">⟶ Civilisational Transition · Ch 2 → Ch 3</span>
+          <div class="bridge-text">Agriculture created <strong>food surplus</strong>. Surplus enabled populations to grow, specialists to emerge (potters, weavers, traders), and settlements to expand. By ~2600 BCE this process culminated in the <strong>Harappan/Indus Valley Civilisation</strong> — the world's largest Bronze Age urban culture, with planned cities, drainage, and standardised weights.</div>
+          <div class="bridge-connector">
+            <span class="bridge-from">Farming Villages</span>
+            <span class="bridge-arrow-mid">→</span>
+            <span class="bridge-to">First Cities</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 3 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="chapter-dot dot3">3</div>
+          <div class="chapter-line line3"></div>
+        </div>
+        <div class="chapter-content ch3">
+          <div class="ch-header">
+            <div class="ch-title">In the Earliest Cities</div>
+            <div class="ch-period" style="border-color:var(--c3);color:var(--c3);">2600 – 1900 BCE</div>
+          </div>
+          <div class="ch-grid">
+            <div>
+              <div class="ch-section-label" style="color:var(--c3);">▸ UPSC Prelims Facts</div>
+              <ul class="ch-facts">
+                <li>IVC (Harappan Civ.) = ~2600–1900 BCE; over 1400 sites; 5 major cities</li>
+                <li>Script: undeciphered; written right-to-left; ~400 signs; seals</li>
+                <li>Town planning: grid streets, burnt-brick, covered drainage, granaries</li>
+                <li>Trade: Mesopotamia (Meluhha = Harappa); copper, carnelian beads, cotton</li>
+                <li>No temples, weapons of war found; Priest-King figure; Mother Goddess terracotta</li>
+                <li>Decline theories: climate change, Ghaggar-Hakra river drying, flooding, invasion (outdated)</li>
+              </ul>
+            </div>
+            <div>
+              <div class="ch-section-label" style="color:var(--c3);">▸ Key Sites</div>
+              <div class="ch-tags">
+                <span class="tag" style="border-color:var(--c3);color:var(--c3);">Harappa</span>
+                <span class="tag" style="border-color:var(--c3);color:var(--c3);">Mohenjo-daro</span>
+                <span class="tag" style="border-color:var(--c3);color:var(--c3);">Dholavira</span>
+                <span class="tag" style="border-color:var(--c3);color:var(--c3);">Lothal</span>
+                <span class="tag" style="border-color:var(--c3);color:var(--c3);">Kalibangan</span>
+                <span class="tag" style="border-color:var(--c3);color:var(--c3);">Rakhigarhi</span>
+              </div>
+              <div class="ch-section-label" style="color:var(--c3);margin-top:6px;">▸ Unique Features</div>
+              <ul class="ch-facts">
+                <li><strong>Great Bath</strong>: Mohenjo-daro; ritual bathing</li>
+                <li><strong>Dockyard</strong>: Lothal (Gujarat)</li>
+                <li><strong>Signboard</strong>: Dholavira (largest inscription)</li>
+                <li>Dancing Girl: bronze; Mohenjo-daro</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ch-significance">
+            <strong>UPSC Sig · </strong>Prelims heavy: undeciphered script, no iron/horse/coins, Lothal dockyard, Dholavira signboard, Rakhigarhi as largest site. Mesopotamia trade = Meluhha reference in cuneiform texts.
+          </div>
+          <div class="ch-memory">
+            <strong>Memory · </strong>IVC = 3Ps: Planned cities, Pictographic script (undeciphered), Peaceful society (no weapons). Lothal = port, Dholavira = signboard, Rakhigarhi = largest.
+          </div>
+        </div>
+      </div>
+
+      <!-- BRIDGE 3→4 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="bridge-dot">→</div>
+          <div class="chapter-line line3" style="min-height:10px;"></div>
+        </div>
+        <div class="transition-bridge">
+          <span class="bridge-arrow">⟶ Civilisational Transition · Ch 3 → Ch 4</span>
+          <div class="bridge-text">After c.1900 BCE the Harappan cities declined — populations dispersed, some migrating eastward to the <strong>Ganga-Yamuna Doab</strong>. Simultaneously, <strong>Vedic pastoral communities</strong> composed the Rigveda. This transition is recorded not in cities but in <strong>texts and burials</strong> — the Vedas, Painted Grey Ware, and megalithic graves now become our primary windows into this new world.</div>
+          <div class="bridge-connector">
+            <span class="bridge-from">Urban Harappa</span>
+            <span class="bridge-arrow-mid">→</span>
+            <span class="bridge-to">Vedic Texts &amp; Megalithic Graves</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 4 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="chapter-dot dot4">4</div>
+          <div class="chapter-line line4"></div>
+        </div>
+        <div class="chapter-content ch4">
+          <div class="ch-header">
+            <div class="ch-title">What Books and Burials Tell Us</div>
+            <div class="ch-period" style="border-color:var(--c4);color:var(--c4);">1500 – 600 BCE</div>
+          </div>
+          <div class="ch-grid">
+            <div>
+              <div class="ch-section-label" style="color:var(--c4);">▸ UPSC Prelims Facts</div>
+              <ul class="ch-facts">
+                <li>Rigveda: oldest (c.1500 BCE); 1028 hymns; oral transmission; Sanskrit</li>
+                <li>4 Vedas: Rig (hymns), Sama (music), Yajur (rituals), Atharva (spells)</li>
+                <li>Vedic society: tribal (jana); cattle wealth (godhana); rajanyas/kshatriyas ruling</li>
+                <li>Megaliths: large stone burial monuments; south India (Brahmagiri) &amp; NE; Iron Age</li>
+                <li>Brahmagiri (Karnataka): megaliths + iron tools + cattle bones</li>
+                <li>Painted Grey Ware (PGW): associated with later Vedic period; Ganga-Yamuna Doab</li>
+              </ul>
+            </div>
+            <div>
+              <div class="ch-section-label" style="color:var(--c4);">▸ Key Concepts</div>
+              <div class="ch-tags">
+                <span class="tag" style="border-color:var(--c4);color:var(--c4);">Rigveda</span>
+                <span class="tag" style="border-color:var(--c4);color:var(--c4);">Megalith</span>
+                <span class="tag" style="border-color:var(--c4);color:var(--c4);">Godhana</span>
+                <span class="tag" style="border-color:var(--c4);color:var(--c4);">Jana</span>
+                <span class="tag" style="border-color:var(--c4);color:var(--c4);">PGW</span>
+                <span class="tag" style="border-color:var(--c4);color:var(--c4);">Brahmagiri</span>
+              </div>
+              <div class="ch-section-label" style="color:var(--c4);margin-top:6px;">▸ Burial Practices</div>
+              <ul class="ch-facts">
+                <li>Megaliths = stone-lined pits; iron tools, pottery with dead</li>
+                <li>Inamgaon: burial under house floors (Chalcolithic)</li>
+                <li>Brahmagiri: elaborate megalithic; S. India; ~800 BCE</li>
+                <li>Objects buried = wealth indicators</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ch-significance">
+            <strong>UPSC Sig · </strong>Prelims: Rigveda composition date, 4 Vedas names, Megalith definition, Brahmagiri site, Painted Grey Ware (PGW) vs Northern Black Polished Ware (NBPW) — important trap.
+          </div>
+          <div class="ch-memory">
+            <strong>Memory · </strong>SAME YA RIG AT = Sama, Yajur, Rig, Atharva. Megalith = MEGA + LITH (big stone). Brahmagiri = south India iron + megaliths.
+          </div>
+        </div>
+      </div>
+
+      <!-- BRIDGE 4→5 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="bridge-dot">→</div>
+          <div class="chapter-line line4" style="min-height:10px;"></div>
+        </div>
+        <div class="transition-bridge">
+          <span class="bridge-arrow">⟶ Civilisational Transition · Ch 4 → Ch 5</span>
+          <div class="bridge-text">The Vedic pastoral society gradually transitioned from tribal clan (jana) to territorial unit (<strong>janapada</strong>), and later to larger <strong>mahajanapadas</strong> as iron technology enabled forest-clearance, wet rice cultivation, and surplus taxation. By 600 BCE, 16 powerful states (<em>shodasha mahajanapadas</em>) had emerged — marking India's first age of <strong>territorial kingdoms and republics</strong>.</div>
+          <div class="bridge-connector">
+            <span class="bridge-from">Vedic Tribes (Jana)</span>
+            <span class="bridge-arrow-mid">→</span>
+            <span class="bridge-to">Janapadas &amp; Kingdoms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 5 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="chapter-dot dot5">5</div>
+          <div class="chapter-line line5"></div>
+        </div>
+        <div class="chapter-content ch5">
+          <div class="ch-header">
+            <div class="ch-title">Kingdoms, Kings and an Early Republic</div>
+            <div class="ch-period" style="border-color:var(--c5);color:var(--c5);">600 – 300 BCE</div>
+          </div>
+          <div class="ch-grid">
+            <div>
+              <div class="ch-section-label" style="color:var(--c5);">▸ UPSC Prelims Facts</div>
+              <ul class="ch-facts">
+                <li>16 Mahajanapadas (Anguttara Nikaya list): Vajji, Magadha, Kosala, Kuru, Panchala, Avanti, Gandhara…</li>
+                <li>Vajji: <strong>Gana-sangha</strong> (republic/oligarchy); capital Vaishali; Buddha's contemporary</li>
+                <li>Magadha: strongest; iron ore + Ganga trade routes; Bimbisara (first expansionist king)</li>
+                <li>Rajasuya &amp; Ashvamedha yajnas = legitimise king's power</li>
+                <li>Northern Black Polished Ware (NBPW): luxury pottery; mahajanapada period</li>
+                <li>Punch-marked coins: earliest coins in India; silver; tax/trade</li>
+              </ul>
+            </div>
+            <div>
+              <div class="ch-section-label" style="color:var(--c5);">▸ Key Concepts</div>
+              <div class="ch-tags">
+                <span class="tag" style="border-color:var(--c5);color:var(--c5);">Mahajanapada</span>
+                <span class="tag" style="border-color:var(--c5);color:var(--c5);">Gana-sangha</span>
+                <span class="tag" style="border-color:var(--c5);color:var(--c5);">Vajji</span>
+                <span class="tag" style="border-color:var(--c5);color:var(--c5);">NBPW</span>
+                <span class="tag" style="border-color:var(--c5);color:var(--c5);">Punch coins</span>
+                <span class="tag" style="border-color:var(--c5);color:var(--c5);">Rajasuya</span>
+              </div>
+              <div class="ch-section-label" style="color:var(--c5);margin-top:6px;">▸ Personalities</div>
+              <ul class="ch-facts">
+                <li><strong>Bimbisara</strong>: Magadha; diplomatic marriages; powerful king</li>
+                <li><strong>Ajatashatru</strong>: conquered Vajji; catapult weapon</li>
+                <li><strong>Chandragupta Maurya</strong>: later overthrew Nanda dynasty</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ch-significance">
+            <strong>UPSC Sig · </strong>Prelims: 16 mahajanapadas list (Anguttara Nikaya = Buddhist source), Vajji = world's earliest republic, NBPW pottery, punch-marked coins, Magadha's geographical advantages.
+          </div>
+          <div class="ch-memory">
+            <strong>Memory · </strong>VAJJI = world's First Republic. Magadha = 3 advantages: Iron + Elephants + Ganga. NBPW = shiny luxury of mahajanapada era.
+          </div>
+        </div>
+      </div>
+
+      <!-- BRIDGE 5→6 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="bridge-dot">→</div>
+          <div class="chapter-line line5" style="min-height:10px;"></div>
+        </div>
+        <div class="transition-bridge">
+          <span class="bridge-arrow">⟶ Civilisational Transition · Ch 5 → Ch 6</span>
+          <div class="bridge-text">As kingdoms consolidated power, <strong>social inequalities deepened</strong> — rigid varna system, elaborate Brahmanical rituals, expensive sacrifices. This created widespread <strong>social and spiritual questioning</strong>. Wandering thinkers (shramanas) challenged Vedic authority. The 6th century BCE saw a remarkable burst of new philosophical schools — Buddhism, Jainism, the Upanishads — all questioning the old order.</div>
+          <div class="bridge-connector">
+            <span class="bridge-from">Kingdoms &amp; Social Hierarchy</span>
+            <span class="bridge-arrow-mid">→</span>
+            <span class="bridge-to">Spiritual &amp; Philosophical Revolt</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 6 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="chapter-dot dot6">6</div>
+          <div class="chapter-line line6"></div>
+        </div>
+        <div class="chapter-content ch6">
+          <div class="ch-header">
+            <div class="ch-title">New Questions and Ideas</div>
+            <div class="ch-period" style="border-color:var(--c6);color:var(--c6);">600 – 200 BCE</div>
+          </div>
+          <div class="ch-grid">
+            <div>
+              <div class="ch-section-label" style="color:var(--c6);">▸ UPSC Prelims Facts</div>
+              <ul class="ch-facts">
+                <li>Upanishads: philosophical texts; part of Vedas; discuss atman-brahman, moksha</li>
+                <li>Mahavira (599–527 BCE): 24th Tirthankara; Jainism; non-violence (ahimsa), truth (satya), non-stealing, celibacy, non-possession (5 vows)</li>
+                <li>Buddha (563–483 BCE): Siddharth Gautama; Kshatriya; Enlightenment at Bodh Gaya; first sermon at Sarnath (Dhamma-cakka-ppavattana)</li>
+                <li>Four Noble Truths + Eightfold Path; Middle Way; Nirvana</li>
+                <li>Buddhist Sangha: community of monks/nuns; democratic; Patimokkha rules</li>
+                <li>Jataka tales: previous lives of Buddha; popular literature</li>
+              </ul>
+            </div>
+            <div>
+              <div class="ch-section-label" style="color:var(--c6);">▸ Key Concepts</div>
+              <div class="ch-tags">
+                <span class="tag" style="border-color:var(--c6);color:var(--c6);">Ahimsa</span>
+                <span class="tag" style="border-color:var(--c6);color:var(--c6);">Nirvana</span>
+                <span class="tag" style="border-color:var(--c6);color:var(--c6);">Sangha</span>
+                <span class="tag" style="border-color:var(--c6);color:var(--c6);">Upanishads</span>
+                <span class="tag" style="border-color:var(--c6);color:var(--c6);">Tirthankara</span>
+                <span class="tag" style="border-color:var(--c6);color:var(--c6);">Shramana</span>
+              </div>
+              <div class="ch-section-label" style="color:var(--c6);margin-top:6px;">▸ Key Diff: Buddhism vs Jainism</div>
+              <ul class="ch-facts">
+                <li>Both reject Vedic authority; both accept karma/rebirth</li>
+                <li>Jainism: extreme ahimsa (even microbes); Digambara/Shvetambara</li>
+                <li>Buddhism: Middle Way; does not require asceticism; Theravada/Mahayana</li>
+                <li>Sarnath = Buddha's 1st sermon; Bodh Gaya = enlightenment</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ch-significance">
+            <strong>UPSC Sig · </strong>One of the most heavily tested chapters. Buddha's dates, 4 Noble Truths, Eightfold Path, Mahavira's 5 vows, Sarnath vs Bodh Gaya vs Kushinagar, Buddhist Sangha as democratic institution.
+          </div>
+          <div class="ch-memory">
+            <strong>Memory · </strong>Buddha's 4Ts: Truth of suffering, Thirst (cause), Termination, Therapy (path). Mahavira's 5 vows = ASTAC (Ahimsa, Satya, Asteya, Celibacy, Aparigraha).
+          </div>
+        </div>
+      </div>
+
+      <!-- BRIDGE 6→7 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="bridge-dot">→</div>
+          <div class="chapter-line line6" style="min-height:10px;"></div>
+        </div>
+        <div class="transition-bridge">
+          <span class="bridge-arrow">⟶ Civilisational Transition · Ch 6 → Ch 7</span>
+          <div class="bridge-text">Buddhism spread rapidly because it had <strong>royal patronage</strong>. Chandragupta Maurya built the first pan-Indian empire; his grandson <strong>Ashoka</strong> converted to Buddhism after the horrific Kalinga war (261 BCE) and used his empire to spread <em>dhamma</em> — an ideology of non-violence, tolerance, and welfare — becoming history's most remarkable example of <strong>imperial self-transformation</strong>.</div>
+          <div class="bridge-connector">
+            <span class="bridge-from">New Ideas + Magadha Power</span>
+            <span class="bridge-arrow-mid">→</span>
+            <span class="bridge-to">Mauryan Empire &amp; Ashoka</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 7 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="chapter-dot dot7">7</div>
+          <div class="chapter-line line7"></div>
+        </div>
+        <div class="chapter-content ch7">
+          <div class="ch-header">
+            <div class="ch-title">Ashoka, the Emperor Who Gave Up War</div>
+            <div class="ch-period" style="border-color:var(--c7);color:var(--c7);">321 – 185 BCE</div>
+          </div>
+          <div class="ch-grid">
+            <div>
+              <div class="ch-section-label" style="color:var(--c7);">▸ UPSC Prelims Facts</div>
+              <ul class="ch-facts">
+                <li>Mauryan Empire: Chandragupta (321 BCE) → Bindusara → Ashoka (268–232 BCE)</li>
+                <li>Kalinga War (261 BCE): ~1.5 lakh killed; Ashoka's transformation; Rock Edict XIII</li>
+                <li>Ashoka's Dhamma: non-violence, respect for elders, religious tolerance, welfare (wells, hospitals)</li>
+                <li>Inscriptions: Brahmi (most), Kharosthi (NW), Greek/Aramaic; James Prinsep deciphered Brahmi (1837)</li>
+                <li>Arthashastra: Kautilya/Chanakya; statecraft manual; espionage, taxation, administration</li>
+                <li>Megasthenes: Greek ambassador; wrote Indica; described Mauryan court</li>
+              </ul>
+            </div>
+            <div>
+              <div class="ch-section-label" style="color:var(--c7);">▸ Key Concepts</div>
+              <div class="ch-tags">
+                <span class="tag" style="border-color:var(--c7);color:var(--c7);">Dhamma</span>
+                <span class="tag" style="border-color:var(--c7);color:var(--c7);">Kalinga</span>
+                <span class="tag" style="border-color:var(--c7);color:var(--c7);">Brahmi</span>
+                <span class="tag" style="border-color:var(--c7);color:var(--c7);">Arthashastra</span>
+                <span class="tag" style="border-color:var(--c7);color:var(--c7);">Megasthenes</span>
+                <span class="tag" style="border-color:var(--c7);color:var(--c7);">Rock Edict</span>
+              </div>
+              <div class="ch-section-label" style="color:var(--c7);margin-top:6px;">▸ Key Inscriptions</div>
+              <ul class="ch-facts">
+                <li><strong>Rock Edict XIII</strong>: Kalinga war remorse</li>
+                <li><strong>Minor Rock Edicts</strong>: Ashoka's personal conversion</li>
+                <li><strong>Pillar Edicts</strong>: later reign; law of Dhamma</li>
+                <li>Taxila: NW satrapy; Hellenistic trade hub</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ch-significance">
+            <strong>UPSC Sig · </strong>Most tested chapter of NCERT 6. Prelims: Prinsep deciphered Brahmi, Megasthenes wrote Indica, Kalinga = Odisha, Rock Edict XIII = Kalinga war, Arthashastra author.
+          </div>
+          <div class="ch-memory">
+            <strong>Memory · </strong>Ashoka = KALINGA → K-shattered him → converted. PRINSEP = deciphered Brahmi 1837. Dhamma = 5 Ws: Welfare, non-Violence, elders, tolerance, religious Wisdom.
+          </div>
+        </div>
+      </div>
+
+      <!-- BRIDGE 7→8 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="bridge-dot">→</div>
+          <div class="chapter-line line7" style="min-height:10px;"></div>
+        </div>
+        <div class="transition-bridge">
+          <span class="bridge-arrow">⟶ Civilisational Transition · Ch 7 → Ch 8</span>
+          <div class="bridge-text">After Ashoka (d.232 BCE), the Mauryan Empire fragmented. But its infrastructure — roads, towns, trade networks — survived. The post-Mauryan centuries (200 BCE – 300 CE) saw <strong>remarkable economic growth</strong>: thriving towns, guild systems (shrenis), long-distance trade, Roman coin imports, and the rise of <strong>Silk Route</strong> commerce. Ordinary village and urban life becomes the new historical subject.</div>
+          <div class="bridge-connector">
+            <span class="bridge-from">Mauryan Infrastructure</span>
+            <span class="bridge-arrow-mid">→</span>
+            <span class="bridge-to">Thriving Villages &amp; Towns</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 8 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="chapter-dot dot8">8</div>
+          <div class="chapter-line line8"></div>
+        </div>
+        <div class="chapter-content ch8">
+          <div class="ch-header">
+            <div class="ch-title">Vital Villages, Thriving Towns</div>
+            <div class="ch-period" style="border-color:var(--c8);color:var(--c8);">200 BCE – 300 CE</div>
+          </div>
+          <div class="ch-grid">
+            <div>
+              <div class="ch-section-label" style="color:var(--c8);">▸ UPSC Prelims Facts</div>
+              <ul class="ch-facts">
+                <li>Three categories of farmers: large landowners (gahapati), independent farmers, agricultural labourers (dasa-karmakara)</li>
+                <li>Iron ploughshare + irrigation tanks (Sringaverapura) = agricultural revolution</li>
+                <li>Shreni (guilds): merchants, craftsmen; issued own coins; regulated trade</li>
+                <li>Mathura: major city; sculpture, cotton; crossroads of trade routes</li>
+                <li>Arikamedu (Pondicherry): Indo-Roman trade; amphorae, Arretine ware, beads</li>
+                <li>Sangam literature (Tamil): earliest Tamil texts; describes ports, paddy, silk, pepper</li>
+              </ul>
+            </div>
+            <div>
+              <div class="ch-section-label" style="color:var(--c8);">▸ Key Concepts</div>
+              <div class="ch-tags">
+                <span class="tag" style="border-color:var(--c8);color:var(--c8);">Shreni</span>
+                <span class="tag" style="border-color:var(--c8);color:var(--c8);">Gahapati</span>
+                <span class="tag" style="border-color:var(--c8);color:var(--c8);">Arikamedu</span>
+                <span class="tag" style="border-color:var(--c8);color:var(--c8);">Sangam</span>
+                <span class="tag" style="border-color:var(--c8);color:var(--c8);">Silk Route</span>
+                <span class="tag" style="border-color:var(--c8);color:var(--c8);">NBPW</span>
+              </div>
+              <div class="ch-section-label" style="color:var(--c8);margin-top:6px;">▸ Sites &amp; Sources</div>
+              <ul class="ch-facts">
+                <li><strong>Arikamedu</strong>: Roman amphorae, glass; S. India port</li>
+                <li><strong>Mathura</strong>: Kushan sculpture; Buddhist art</li>
+                <li><strong>Nagarjunakonda</strong>: Buddhist site; Andhra</li>
+                <li><strong>Sangam poems</strong>: Purananuru, Akananuru; Tamil heroic poetry</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ch-significance">
+            <strong>UPSC Sig · </strong>Prelims: Arikamedu = Indo-Roman trade (Arretine pottery), Shreni = guilds (medieval form = sreni), gahapati = landed gentry, Sangam = Tamil literature earliest, Sringaverapura irrigation.
+          </div>
+          <div class="ch-memory">
+            <strong>Memory · </strong>ARIKAMEDU = ARi = ARRETine (Roman pottery). Shreni = guild = think UNION of craftsmen. Gahapati = GReat householder = landed farmer.
+          </div>
+        </div>
+      </div>
+
+      <!-- BRIDGE 8→9 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="bridge-dot">→</div>
+          <div class="chapter-line line8" style="min-height:10px;"></div>
+        </div>
+        <div class="transition-bridge">
+          <span class="bridge-arrow">⟶ Civilisational Transition · Ch 8 → Ch 9</span>
+          <div class="bridge-text">The economic prosperity of the post-Mauryan era provided the resource base for <strong>new empires</strong>. The Guptas (320–550 CE) unified much of northern India; the Pallavas and Chalukyas dominated the south; Harsha briefly reunified the north (606–647 CE). These were not just military empires but <strong>cultural patronage states</strong> — funding temples, literature, mathematics, and astronomy. The age of classical India had arrived.</div>
+          <div class="bridge-connector">
+            <span class="bridge-from">Trade-Wealth &amp; Guilds</span>
+            <span class="bridge-arrow-mid">→</span>
+            <span class="bridge-to">Gupta &amp; Regional Empires</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 9 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="chapter-dot dot9">9</div>
+          <div class="chapter-line line9"></div>
+        </div>
+        <div class="chapter-content ch9">
+          <div class="ch-header">
+            <div class="ch-title">New Empires and Kingdoms</div>
+            <div class="ch-period" style="border-color:var(--c9);color:var(--c9);">320 – 750 CE</div>
+          </div>
+          <div class="ch-grid">
+            <div>
+              <div class="ch-section-label" style="color:var(--c9);">▸ UPSC Prelims Facts</div>
+              <ul class="ch-facts">
+                <li>Guptas (320–550 CE): Chandragupta I, Samudragupta (Allahabad Pillar), Chandragupta II (Vikramaditya)</li>
+                <li>Samudragupta: Allahabad Pillar inscription (Harishena composed); 4 policy types: annexation, tribute, gifts, alliance</li>
+                <li>Fa-Hien (399–414 CE): Chinese pilgrim; visited Gupta India; describes peaceful prosperous society</li>
+                <li>Prashastis: eulogies composed for kings; inscriptions; poetic accounts</li>
+                <li>Harsha (606–647 CE): Kanauj; patron of Buddhism; Xuanzang (Hiuen Tsang) visited</li>
+                <li>Pallavas (Kanchipuram), Chalukyas (Badami): S. India; Pulakesi II defeated Harsha</li>
+              </ul>
+            </div>
+            <div>
+              <div class="ch-section-label" style="color:var(--c9);">▸ Key Concepts</div>
+              <div class="ch-tags">
+                <span class="tag" style="border-color:var(--c9);color:var(--c9);">Prashasti</span>
+                <span class="tag" style="border-color:var(--c9);color:var(--c9);">Samudragupta</span>
+                <span class="tag" style="border-color:var(--c9);color:var(--c9);">Fa-Hien</span>
+                <span class="tag" style="border-color:var(--c9);color:var(--c9);">Xuanzang</span>
+                <span class="tag" style="border-color:var(--c9);color:var(--c9);">Harsha</span>
+                <span class="tag" style="border-color:var(--c9);color:var(--c9);">Nalanda</span>
+              </div>
+              <div class="ch-section-label" style="color:var(--c9);margin-top:6px;">▸ Key Personalities</div>
+              <ul class="ch-facts">
+                <li><strong>Samudragupta</strong>: "Napoleon of India" (V.A. Smith); Veena-player; poet</li>
+                <li><strong>Chandragupta II</strong>: Vikramaditya; Kalidasa's patron; Iron Pillar Delhi</li>
+                <li><strong>Harsha</strong>: wrote plays (Ratnavali, Priyadarshika); Harshacharita by Banabhatta</li>
+                <li><strong>Pulakesi II</strong>: Chalukya; defeated Harsha at Narmada (634 CE)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ch-significance">
+            <strong>UPSC Sig · </strong>Prelims: Samudragupta = Allahabad Pillar + Harishena, Fa-Hien vs Xuanzang (Gupta vs Harsha), Prashasti definition, Pulakesi II defeat of Harsha, Nalanda University founded by Kumaragupta I.
+          </div>
+          <div class="ch-memory">
+            <strong>Memory · </strong>Gupta timeline: C1→Sam→C2(Vikra)→Skanda→Kumara→Buda. Fa-Hien = Gupta era. Xuanzang = Harsha era. Pulakesi = PULLED Harsha back (defeated him).
+          </div>
+        </div>
+      </div>
+
+      <!-- BRIDGE 9→10 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="bridge-dot">→</div>
+          <div class="chapter-line line9" style="min-height:10px;"></div>
+        </div>
+        <div class="transition-bridge">
+          <span class="bridge-arrow">⟶ Civilisational Transition · Ch 9 → Ch 10</span>
+          <div class="bridge-text">Political power and imperial patronage now found their most lasting expression not in conquest but in <strong>cultural creation</strong>. The same wealth that funded Gupta armies also funded the Ajanta murals, Sanskrit literature (Kalidasa), iron-pillar metallurgy, mathematical innovations (Aryabhata), and the great <strong>cave temples</strong> — India's classical age produced monuments that have endured for 1500 years.</div>
+          <div class="bridge-connector">
+            <span class="bridge-from">Gupta &amp; Post-Gupta Empires</span>
+            <span class="bridge-arrow-mid">→</span>
+            <span class="bridge-to">Classical Art, Literature &amp; Science</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 10 -->
+      <div class="chapter-card">
+        <div class="chapter-num-col">
+          <div class="chapter-dot dot10">10</div>
+          <div class="chapter-line line10" style="opacity:0;"></div>
+        </div>
+        <div class="chapter-content ch10">
+          <div class="ch-header">
+            <div class="ch-title">Buildings, Paintings and Books</div>
+            <div class="ch-period" style="border-color:var(--c10);color:var(--c10);">200 BCE – 700 CE</div>
+          </div>
+          <div class="ch-grid">
+            <div>
+              <div class="ch-section-label" style="color:var(--c10);">▸ UPSC Prelims Facts</div>
+              <ul class="ch-facts">
+                <li>Stupas: Buddhist monuments; relics of Buddha inside; Sanchi (MP) = finest; Amaravati (AP)</li>
+                <li>Stupa structure: anda (dome), harmika, yashti (pillar), toranas (gateways), pradakshina path</li>
+                <li>Ajanta Caves (Maharashtra): Buddhist; paintings (tempera); Gupta period; UNESCO WHS</li>
+                <li>Ellora: Hindu + Buddhist + Jain caves; rock-cut; Kailash Temple (Rashtrakuta)</li>
+                <li>Kalidasa: Shakuntala, Meghaduta, Raghuvansha; Gupta court; greatest Sanskrit poet</li>
+                <li>Aryabhata: mathematician/astronomer; calculated pi, earth's rotation, solar year; Aryabhatiya</li>
+              </ul>
+            </div>
+            <div>
+              <div class="ch-section-label" style="color:var(--c10);">▸ Key Concepts</div>
+              <div class="ch-tags">
+                <span class="tag" style="border-color:var(--c10);color:var(--c10);">Stupa</span>
+                <span class="tag" style="border-color:var(--c10);color:var(--c10);">Ajanta</span>
+                <span class="tag" style="border-color:var(--c10);color:var(--c10);">Kalidasa</span>
+                <span class="tag" style="border-color:var(--c10);color:var(--c10);">Aryabhata</span>
+                <span class="tag" style="border-color:var(--c10);color:var(--c10);">Nalanda</span>
+                <span class="tag" style="border-color:var(--c10);color:var(--c10);">Toranas</span>
+              </div>
+              <div class="ch-section-label" style="color:var(--c10);margin-top:6px;">▸ Key Sites &amp; Works</div>
+              <ul class="ch-facts">
+                <li><strong>Sanchi Stupa</strong>: Ashoka built; gateways added later; Madhya Pradesh</li>
+                <li><strong>Ajanta</strong>: 29 caves; paintings of Jataka tales; 2nd BCE – 7th CE</li>
+                <li><strong>Nalanda</strong>: Buddhist university; Bihar; ~5th CE; Xuanzang studied here</li>
+                <li><strong>Iron Pillar</strong>: Delhi; Gupta; rust-free; metallurgical marvel</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ch-significance">
+            <strong>UPSC Sig · </strong>Prelims: Stupa parts (anda/harmika/yashti/toranas), Sanchi vs Amaravati stupas, Ajanta = paintings (NOT sculptures), Aryabhata = Aryabhatiya + zero concept, Kalidasa's works list.
+          </div>
+          <div class="ch-memory">
+            <strong>Memory · </strong>Stupa = AYHT: Anda + Yashti + Harmika + Torana. Ajanta = PAINT. Ellora = CUT (rock-cut). Kalidasa = 3S: Shakuntala, Shishupalvadha... wait — Meghaduta + Shakuntala + Raghuvamsha.
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end timeline-col -->
+
+    <!-- RIGHT PANEL -->
+    <div class="right-col">
+
+      <!-- IMPORTANT SITES -->
+      <div class="panel-section">
+        <div class="panel-header sites-header">Notable Archaeological Sites</div>
+        <div class="panel-body">
+          <div class="site-item"><div class="site-dot"></div><div><span class="site-name">Bhimbetka</span> — MP; rock shelters; cave paintings; Palaeolithic–Mesolithic; UNESCO WHS 2003</div></div>
+          <div class="site-item"><div class="site-dot"></div><div><span class="site-name">Mehrgarh</span> — Balochistan (now Pakistan); c.7000 BCE; earliest farming in subcontinent; barley, wheat, cattle</div></div>
+          <div class="site-item"><div class="site-dot"></div><div><span class="site-name">Harappa</span> — Punjab (Pak.); IVC; 1st discovered (1921); gave name to civilisation</div></div>
+          <div class="site-item"><div class="site-dot"></div><div><span class="site-name">Mohenjo-daro</span> — Sindh; "Mound of the Dead"; Great Bath; Dancing Girl; UNESCO WHS</div></div>
+          <div class="site-item"><div class="site-dot"></div><div><span class="site-name">Dholavira</span> — Gujarat; largest IVC site in India; giant signboard inscription; water management</div></div>
+          <div class="site-item"><div class="site-dot"></div><div><span class="site-name">Inamgaon</span> — Maharashtra; Chalcolithic; burial under floors; 1400–700 BCE</div></div>
+          <div class="site-item"><div class="site-dot"></div><div><span class="site-name">Brahmagiri</span> — Karnataka; megaliths + iron tools; ~800 BCE; excavated by Wheeler</div></div>
+          <div class="site-item"><div class="site-dot"></div><div><span class="site-name">Taxila</span> — NW (Pakistan); Gandhara; Mauryan satrapy; Greek influence; Kharosthi script</div></div>
+          <div class="site-item"><div class="site-dot"></div><div><span class="site-name">Sarnath</span> — UP; near Varanasi; Buddha's 1st sermon; Ashoka pillar; Lion Capital (National Emblem)</div></div>
+          <div class="site-item"><div class="site-dot"></div><div><span class="site-name">Arikamedu</span> — Pondicherry; Indo-Roman trade post; Arretine ware, amphorae; c.1st CE</div></div>
+          <div class="site-item"><div class="site-dot"></div><div><span class="site-name">Nalanda</span> — Bihar; Gupta-era Buddhist university; Kumaragupta I founded; Xuanzang studied here</div></div>
+          <div class="site-item"><div class="site-dot"></div><div><span class="site-name">Sanchi</span> — MP; Ashoka's stupa; best-preserved stupa in India; UNESCO WHS</div></div>
+        </div>
+      </div>
+
+      <!-- IMPORTANT SOURCES -->
+      <div class="panel-section">
+        <div class="panel-header sources-header">Classification of Historical Sources</div>
+        <div class="panel-body">
+          <span class="source-tag">Manuscripts</span>
+          <span class="source-tag">Inscriptions</span>
+          <span class="source-tag">Coins</span>
+          <span class="source-tag">Seals</span>
+          <span class="source-tag">Megaliths</span>
+          <span class="source-tag">Monuments</span>
+          <span class="source-tag">Oral Tradition</span>
+          <span class="source-tag">Pottery</span>
+          <span class="source-tag">Prashastis</span>
+          <div class="source-desc">
+            <strong>Inscriptions</strong> (most reliable; fixed; cannot be altered) vs <strong>Manuscripts</strong> (copied by scribes; can have errors). <strong>Coins</strong>: rulers, trade routes, dates. <strong>Seals</strong>: IVC identity, trade. <strong>Megaliths</strong>: burial practices. <strong>Prashastis</strong>: royal praise poems (biased but informative). <strong>Sangam poems</strong>: social life of Tamil people. <strong>Jataka tales</strong>: Buddhist previous lives; social history.
+          </div>
+        </div>
+      </div>
+
+      <!-- PERSONALITIES -->
+      <div class="panel-section">
+        <div class="panel-header persons-header">Key Historical Figures</div>
+        <div class="panel-body">
+          <div class="person-item"><div class="person-icon">Bu</div><div><span class="person-name">Gautama Buddha</span><br><span class="person-desc">563–483 BCE; Kshatriya; enlightened at Bodh Gaya; 1st sermon Sarnath; Mahaparinirvana Kushinagar</span></div></div>
+          <div class="person-item"><div class="person-icon">Ma</div><div><span class="person-name">Mahavira</span><br><span class="person-desc">599–527 BCE; 24th Tirthankara; extreme ahimsa; 5 mahavrats; died Pavapuri (Bihar)</span></div></div>
+          <div class="person-item"><div class="person-icon">As</div><div><span class="person-name">Ashoka</span><br><span class="person-desc">268–232 BCE; Kalinga war 261 BCE → converted; spread Dhamma; Rock &amp; Pillar Edicts; sent missions Sri Lanka</span></div></div>
+          <div class="person-item"><div class="person-icon">Me</div><div><span class="person-name">Megasthenes</span><br><span class="person-desc">Greek ambassador of Seleucus to Chandragupta's court; wrote <em>Indica</em> (fragments survive)</span></div></div>
+          <div class="person-item"><div class="person-icon">Ka</div><div><span class="person-name">Kalidasa</span><br><span class="person-desc">Gupta era; Sanskrit poet-dramatist; Shakuntala, Meghaduta, Raghuvamsha, Kumarasambhava</span></div></div>
+          <div class="person-item"><div class="person-icon">Ha</div><div><span class="person-name">Harsha</span><br><span class="person-desc">606–647 CE; Kanauj; author of 3 plays; defeated by Pulakesi II; Xuanzang visited; Harshacharita (Banabhatta)</span></div></div>
+          <div class="person-item"><div class="person-icon">Fa</div><div><span class="person-name">Fa-Hien</span><br><span class="person-desc">Chinese Buddhist pilgrim; 399–414 CE; visited during Chandragupta II; described prosperous peaceful Gupta India</span></div></div>
+          <div class="person-item"><div class="person-icon">Xu</div><div><span class="person-name">Xuanzang (Hiuen Tsang)</span><br><span class="person-desc">Chinese pilgrim; 629–645 CE; visited Harsha; studied Nalanda; brought back 657 Buddhist texts</span></div></div>
+          <div class="person-item"><div class="person-icon">Ar</div><div><span class="person-name">Aryabhata</span><br><span class="person-desc">476–550 CE; Gupta era; Aryabhatiya; calculated pi=3.1416; earth rotates; solar year; concept of zero</span></div></div>
+        </div>
+      </div>
+
+      <!-- UPSC TRAP COMPARISONS -->
+      <div class="panel-section">
+        <div class="panel-header traps-header">Common Conceptual Distinctions — UPSC</div>
+        <div class="panel-body">
+          <div class="trap-row">
+            <div class="trap-a">Manuscript</div>
+            <div class="trap-vs">VS</div>
+            <div class="trap-b">Inscription</div>
+          </div>
+          <div class="trap-detail">Manuscripts = handwritten; can be copied/altered. Inscriptions = on stone/metal; cannot be altered = MORE RELIABLE primary source.</div>
+
+          <div class="trap-row">
+            <div class="trap-a">Harappan Society</div>
+            <div class="trap-vs">VS</div>
+            <div class="trap-b">Vedic Society</div>
+          </div>
+          <div class="trap-detail">IVC = urban, undeciphered script, no iron, no horse, peaceful. Vedic = pastoral, Sanskrit oral, iron (later), horse (Ashvamedha), warfare.</div>
+
+          <div class="trap-row">
+            <div class="trap-a">Janapada</div>
+            <div class="trap-vs">VS</div>
+            <div class="trap-b">Mahajanapada</div>
+          </div>
+          <div class="trap-detail">Janapada = "foot of the tribe"; smaller early territory. Mahajanapada = "great territory"; 16 powerful states from ~600 BCE.</div>
+
+          <div class="trap-row">
+            <div class="trap-a">Buddhism</div>
+            <div class="trap-vs">VS</div>
+            <div class="trap-b">Jainism</div>
+          </div>
+          <div class="trap-detail">Buddhism = Middle Way; rejects extreme asceticism; Nirvana. Jainism = extreme ahimsa; complete non-violence (even microbes); Moksha through tapas.</div>
+
+          <div class="trap-row">
+            <div class="trap-a">Stupa</div>
+            <div class="trap-vs">VS</div>
+            <div class="trap-b">Temple</div>
+          </div>
+          <div class="trap-detail">Stupa = Buddhist; dome-shaped; houses relics; no idol inside. Temple = Hindu; spire (shikhara); idol in garbhagriha. Both = religious architecture.</div>
+
+          <div class="trap-row">
+            <div class="trap-a">Megalith</div>
+            <div class="trap-vs">VS</div>
+            <div class="trap-b">Cairn burial</div>
+          </div>
+          <div class="trap-detail">Megalith = "big stone" burial structure; Iron Age; S. India &amp; NE; Brahmagiri. Cairn = stone-heap over grave. Both = burial markers but different scale.</div>
+
+          <div class="trap-row">
+            <div class="trap-a">Fa-Hien</div>
+            <div class="trap-vs">VS</div>
+            <div class="trap-b">Xuanzang</div>
+          </div>
+          <div class="trap-detail">Fa-Hien = Gupta era (Chandragupta II, 399–414 CE). Xuanzang = Harsha era (629–645 CE). Both = Chinese pilgrims but different centuries!</div>
+
+          <div class="trap-row">
+            <div class="trap-a">PGW</div>
+            <div class="trap-vs">VS</div>
+            <div class="trap-b">NBPW</div>
+          </div>
+          <div class="trap-detail">PGW (Painted Grey Ware) = later Vedic / early mahajanapada; grey with black designs. NBPW (N. Black Polished Ware) = mahajanapada peak; lustrous black luxury ware.</div>
+        </div>
+      </div>
+
+      <!-- CHAPTER FLOW STRIP -->
+      <div class="panel-section">
+        <div class="panel-header flow-header">Civilisational Narrative Sequence</div>
+        <div class="panel-body">
+          <div class="flow-chain">
+            <div class="flow-link">
+              <div class="flow-num" style="background:linear-gradient(135deg,var(--c1),#f08c3a);">1</div>
+              <div><span class="flow-label" style="color:var(--c1);">Tools of History</span></div>
+              <span class="flow-arrow">→ sources define what we can know</span>
+            </div>
+            <div class="flow-link">
+              <div class="flow-num" style="background:linear-gradient(135deg,var(--c2),#51cf66);">2</div>
+              <div><span class="flow-label" style="color:var(--c2);">Hunters → Farmers</span></div>
+              <span class="flow-arrow">→ surplus creates specialists</span>
+            </div>
+            <div class="flow-link">
+              <div class="flow-num" style="background:linear-gradient(135deg,var(--c3),#22b8cf);">3</div>
+              <div><span class="flow-label" style="color:var(--c3);">First Cities (IVC)</span></div>
+              <span class="flow-arrow">→ cities decline; society disperses</span>
+            </div>
+            <div class="flow-link">
+              <div class="flow-num" style="background:linear-gradient(135deg,var(--c4),#f03e3e);">4</div>
+              <div><span class="flow-label" style="color:var(--c4);">Vedic Texts &amp; Burials</span></div>
+              <span class="flow-arrow">→ iron + rice → territorial states</span>
+            </div>
+            <div class="flow-link">
+              <div class="flow-num" style="background:linear-gradient(135deg,var(--c5),#339af0);">5</div>
+              <div><span class="flow-label" style="color:var(--c5);">Kingdoms &amp; Republics</span></div>
+              <span class="flow-arrow">→ inequality → philosophical protest</span>
+            </div>
+            <div class="flow-link">
+              <div class="flow-num" style="background:linear-gradient(135deg,var(--c6),#9775fa);">6</div>
+              <div><span class="flow-label" style="color:var(--c6);">Buddhism &amp; Jainism</span></div>
+              <span class="flow-arrow">→ royal patronage → Magadha empire</span>
+            </div>
+            <div class="flow-link">
+              <div class="flow-num" style="background:linear-gradient(135deg,var(--c7),#fcc419);">7</div>
+              <div><span class="flow-label" style="color:var(--c7);">Ashoka's Dhamma</span></div>
+              <span class="flow-arrow">→ empire roads → trade expands</span>
+            </div>
+            <div class="flow-link">
+              <div class="flow-num" style="background:linear-gradient(135deg,var(--c8),#94d82d);">8</div>
+              <div><span class="flow-label" style="color:var(--c8);">Villages &amp; Towns</span></div>
+              <span class="flow-arrow">→ wealth → new empires</span>
+            </div>
+            <div class="flow-link">
+              <div class="flow-num" style="background:linear-gradient(135deg,var(--c9),#f76707);">9</div>
+              <div><span class="flow-label" style="color:var(--c9);">Gupta &amp; Harsha</span></div>
+              <span class="flow-arrow">→ patronage → classical culture</span>
+            </div>
+            <div class="flow-link">
+              <div class="flow-num" style="background:linear-gradient(135deg,var(--c10),#f06595);">10</div>
+              <div><span class="flow-label" style="color:var(--c10);">Art, Literature, Science</span></div>
+              <span class="flow-arrow">→ India's Classical Age</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end right-col -->
+
+  </div><!-- end poster-body -->
+
+  <!-- FOOTER CHRONOLOGY CHAIN -->
+  <div class="poster-footer">
+    <div class="footer-chain-label">Civilisational Chronology — Complete Historical Sequence</div>
+    <div class="footer-chain">
+      <div class="fc-node"><span class="fc-num">2 MYA</span>Early<br>Humans</div>
+      <div class="fc-arrow">⟶</div>
+      <div class="fc-node"><span class="fc-num">7000 BCE</span>Farming<br>Begins</div>
+      <div class="fc-arrow">⟶</div>
+      <div class="fc-node"><span class="fc-num">2600 BCE</span>IVC Cities</div>
+      <div class="fc-arrow">⟶</div>
+      <div class="fc-node"><span class="fc-num">1500 BCE</span>Vedic<br>Society</div>
+      <div class="fc-arrow">⟶</div>
+      <div class="fc-node"><span class="fc-num">600 BCE</span>16 Maha-<br>janapadas</div>
+      <div class="fc-arrow">⟶</div>
+      <div class="fc-node"><span class="fc-num">563 BCE</span>Buddha &amp;<br>Mahavira</div>
+      <div class="fc-arrow">⟶</div>
+      <div class="fc-node"><span class="fc-num">321 BCE</span>Mauryan<br>Empire</div>
+      <div class="fc-arrow">⟶</div>
+      <div class="fc-node"><span class="fc-num">261 BCE</span>Ashoka's<br>Dhamma</div>
+      <div class="fc-arrow">⟶</div>
+      <div class="fc-node"><span class="fc-num">320 CE</span>Gupta<br>Golden Age</div>
+      <div class="fc-arrow">⟶</div>
+      <div class="fc-node"><span class="fc-num">606 CE</span>Harsha &amp;<br>Classics</div>
+    </div>
+    <div class="footer-copy">NCERT CLASS VI · OUR PASTS I · LATEST EDITION · ALL 10 CHAPTERS · UPSC PRELIMS + MAINS GS-I REVISION · SINGLE-GLANCE CIVILISATIONAL WALL CHART</div>
+  </div>
+
+</div><!-- end outer-frame -->
+
+</body>
+</html>
